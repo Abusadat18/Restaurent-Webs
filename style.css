@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* || IMAGE RESET */
+img {
+  display: block;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* || NAVBAR */
+.nav__section {
+  box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.5);
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 2;
+}
+
+.navbar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.navbar__hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__icon {
+  font-size: 2.2rem;
+}
+
+/* || MAIN SECTION */
+.main {
+  max-width: 1200px;
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 2.7rem;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin: auto;
+}
+
+.main__title {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 400px;
+  gap: 1.6rem;
+}
+
+.main__title h1 {
+  font-size: 72px;
+}
+
+.main__title span {
+  white-space: wrap;
+}
+
+.main-discount-btn {
+  align-self: flex-start;
+  background-color: green;
+  color: white;
+  padding: 0.6rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+  border: none;
+}
+
+.main-exp-btn {
+  background-color: orange;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  font-size: 1.5rem;
+  align-self: flex-start;
+}
+
+/* ||PROS SECTION */
+.pros {
+  max-width: 1200px;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 50px auto;
+  justify-content: center;
+  gap: 30px;
+}
+
+.pro-card {
+  max-width: 320px;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 12px;
+}
+
+.pro-text {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 5px;
+}
+
+/* || MENU SECTION */
+hr {
+  color: grey;
+}
+
+.menu {
+  max-width: 1200px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.menu-btn {
+  border: none;
+  background-color: green;
+  color: white;
+  font-size: 18px;
+  padding: 0.6rem 0.8rem;
+}
+
+.main-title h2 {
+  font-size: 35px;
+  padding: 35px 0 50px;
+}
+
+.menu-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "f1 f1 f2 f3"
+    "f1 f1 f2 f7"
+    "f4 f5 f6 f7";
+}
+
+.menu-food1 {
+  /* grid-area: 1 / 1 / 3 / 3; */
+  grid-area: f1;
+}
+
+.menu-food2 {
+  /* grid-area: 1 / 3 / 3 / 4; */
+  grid-area: f2;
+}
+
+.menu-food3 {
+  /* grid-area: 1 / 4 / 2 / 5; */
+  grid-area: f3;
+}
+
+.menu-food4 {
+  /* grid-area: 3 / 1 / 4 / 2; */
+  grid-area: f4;
+}
+
+.menu-food5 {
+  /* grid-area: 3 / 2 / 4 / 3; */
+  grid-area: f5;
+}
+
+.menu-food6 {
+  /* grid-area: 3 / 3 / 4 / 4; */
+  grid-area: f6;
+}
+
+.menu-food7 {
+  /* grid-area: 2 / 4 / 4 / 5 ; */
+  grid-area: f7;
+}
+
+.menu-grid img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+
+.menu-grid img:hover {
+  transform: scale(1.05);
+  transition: all 0.4s ease-in-out;
+}
+
+/* || FOOTER SECTION */
+.footer-container {
+  background-color: bisque;
+  padding: 4rem 5rem 8rem;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 60px 0 0;
+}
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* .footer-news,
+.footer-main,
+.footer-support,
+.footer-logo {
+  max-width: 320px;
+} */
+
+.footer-news,
+.footer-main,
+.footer-support {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.4rem;
+}
+
+.footer h3 {
+  padding-bottom: 0.8rem;
+}
+
+.footer-email {
+  font-size: 18px;
+  width: 300px;
+  margin: 4px 0 10px;
+  padding: 3px 0;
+}
+
+.footer-logo {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-news-icon {
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: 30px;
+  gap: 20px;
+}
+
+.footer-news-icon i:hover {
+  color: hsla(0, 0%, 0%, 0.718);
+  transition: all 0.3s;
+}
+
+.footer-logo:hover {
+  transform: scale(1.04);
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1012px) {
+  .main__image img {
+    width: 90%;
+    margin: auto;
+  }
+
+  .main__title {
+    text-align: center;
+  }
+
+  .main-discount-btn,
+  .main-exp-btn {
+    align-self: center;
+  }
+
+  .footer-container {
+    padding: 2rem 2rem 4rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 2.4rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-news,
+  .footer-main,
+  .footer-support {
+    align-items: center;
+  }
+
+  .footer-email {
+    text-align: center;
+  }
+}
